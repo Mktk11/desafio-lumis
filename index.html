@@ -4,47 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <script src="javascript/script.js"></script>
-    <title>Document</title>
+    <script src="javascript/script.js" defer></script>
+    <title>Pokedéx</title>
 </head>
 <body>
     <header>
         <nav>
             <img src="imagem/logo.png" class="logo" alt="logo da pokédex">
             <ul class="nav__links">
-                <li class="items">
-                    <a href="">Home</a>
-                </li>
-                <li class="items">
-                    <a href="">Pokédex</a>
-                </li>
+                <li class="items"><a href="">Home</a></li>
+                <li class="items"><a href="">Pokédex</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="main__busca">
-            <input type="text" placeholder="Faça uma busca pelo nome do pokémon">
-        </section>
-        <section class="main__pokemon">
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-            <div class="main__pokemon--pokedex">Pokemon</div>
-        </section>
-    </main>
+    <section class="busca">
+      <input type="text" id="pokemonBusca" placeholder="Faça uma busca pelo nome do pokémon">
+    </section>
+
+    <section id="listaPokemons" class="grid"></section>
+  </main>
+  <footer>
+    <section class="paginacao">
+        <button class="paginacao__botao" id="anterior">Anterior</button>
+        <div class="paginacao__numeros" data-page="1">1</div>
+        <div class="paginacao__numeros" data-page="2">2</div>
+        <div class="paginacao__numeros" data-page="3">3</div>
+        <button class="paginacao__botao" id="proximo">Próximo</button>
+    </section>
+  </footer>
 </body>
 </html>
